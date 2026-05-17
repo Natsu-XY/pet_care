@@ -85,6 +85,73 @@ function PawMark() {
   );
 }
 
+function PetMapCard({ title, description }: { title: string; description: string }) {
+  return (
+    <article className="overflow-hidden rounded-lg border border-[#d9e2dd] bg-white shadow-[0_10px_30px_rgba(42,66,56,0.08)]">
+      <div className="p-6 pb-4">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h3 className="m-0 mb-2 text-[19px]">{title}</h3>
+            <p className="m-0 text-[#65736c]">{description}</p>
+          </div>
+          <span
+            aria-hidden="true"
+            className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[#fff2dc] text-[#d48437] shadow-[0_8px_18px_rgba(212,132,55,0.18)]"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 21s6-5.1 6-10.5A6 6 0 0 0 6 10.5C6 15.9 12 21 12 21Z"
+                fill="currentColor"
+              />
+              <path
+                d="M9.7 11.1c.7 0 1.2-.7 1.2-1.5s-.5-1.5-1.2-1.5-1.2.7-1.2 1.5.5 1.5 1.2 1.5Zm4.6 0c.7 0 1.2-.7 1.2-1.5s-.5-1.5-1.2-1.5-1.2.7-1.2 1.5.5 1.5 1.2 1.5ZM12 11.8c-1.2 0-2.7 1.3-2.7 2.4 0 .8.6 1.2 1.3 1.2.5 0 .8-.3 1.4-.3s.9.3 1.4.3c.7 0 1.3-.4 1.3-1.2 0-1.1-1.5-2.4-2.7-2.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div className="relative mx-4 mb-4 h-[168px] overflow-hidden rounded-lg border border-[#d7e6dd] bg-[#e8f5ee]">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.58)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,0.58)_1px,transparent_1px)] bg-[size:34px_34px]" />
+        <div className="absolute -left-7 top-8 h-14 w-[118%] rotate-[-8deg] bg-[#fff8ec] shadow-[0_0_0_1px_rgba(217,226,221,0.74)_inset]" />
+        <div className="absolute left-[-18px] top-[106px] h-12 w-[112%] rotate-[7deg] bg-[#f8d9c5] shadow-[0_0_0_1px_rgba(238,143,113,0.18)_inset]" />
+        <div className="absolute left-[12%] top-[62%] h-3 w-3 rounded-full bg-[#347d64]" />
+        <div className="absolute left-[20%] top-[50%] h-2.5 w-2.5 rounded-full bg-[#77bfa3]" />
+        <div className="absolute right-[22%] top-[18%] h-3.5 w-3.5 rounded-full bg-[#ee8f71]" />
+        <div className="absolute right-[14%] bottom-[18%] h-9 w-9 rounded-full bg-white/78 shadow-[0_6px_18px_rgba(42,66,56,0.12)]" />
+        <svg
+          aria-hidden="true"
+          className="absolute inset-x-[13%] top-[50px] h-[84px] w-[74%]"
+          viewBox="0 0 320 110"
+          fill="none"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M4 86C48 48 80 102 122 56C164 10 196 14 226 42C254 68 280 61 316 22"
+            stroke="#347d64"
+            strokeWidth="5"
+            strokeLinecap="round"
+            strokeDasharray="10 12"
+          />
+        </svg>
+        <div className="absolute left-[48%] top-[31px] grid h-[70px] w-[70px] -translate-x-1/2 place-items-center rounded-full bg-white shadow-[0_14px_34px_rgba(42,66,56,0.18)]">
+          <div className="grid h-[52px] w-[52px] place-items-center rounded-full bg-[#347d64] text-white">
+            <svg width="31" height="31" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8.5 10.2c1.3 0 2.3-1.3 2.3-2.9S9.8 4.4 8.5 4.4 6.2 5.7 6.2 7.3s1 2.9 2.3 2.9Zm7 0c1.3 0 2.3-1.3 2.3-2.9s-1-2.9-2.3-2.9-2.3 1.3-2.3 2.9 1 2.9 2.3 2.9ZM5.4 15.1c1.1 0 2-1.1 2-2.4s-.9-2.4-2-2.4-2 1.1-2 2.4.9 2.4 2 2.4Zm13.2 0c1.1 0 2-1.1 2-2.4s-.9-2.4-2-2.4-2 1.1-2 2.4.9 2.4 2 2.4ZM12 11.9c-2.2 0-5 2.6-5 5 0 1.5 1.2 2.4 2.6 2.4 1 0 1.5-.5 2.4-.5s1.4.5 2.4.5c1.4 0 2.6-.9 2.6-2.4 0-2.4-2.8-5-5-5Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute bottom-3 left-3 rounded-full bg-white/88 px-3 py-1.5 text-xs font-bold text-[#347d64] shadow-[0_8px_20px_rgba(42,66,56,0.12)]">
+          萌宠地图
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -308,13 +375,21 @@ export default function Home() {
         <section className="bg-[#eef5f0] px-4 pt-14 pb-8 sm:px-[clamp(18px,5vw,72px)]">
           <div className="mx-auto grid w-full max-w-[1180px] gap-[18px] lg:grid-cols-3">
             {contacts.map((contact) => (
-              <article
-                key={contact.title}
-                className="rounded-lg border border-[#d9e2dd] bg-white p-6 shadow-[0_10px_30px_rgba(42,66,56,0.08)]"
-              >
-                <h3 className="m-0 mb-2 text-[19px]">{contact.title}</h3>
-                <p className="m-0 text-[#65736c]">{contact.description}</p>
-              </article>
+              contact.title === "门店地址" ? (
+                <PetMapCard
+                  key={contact.title}
+                  title={contact.title}
+                  description={contact.description}
+                />
+              ) : (
+                <article
+                  key={contact.title}
+                  className="rounded-lg border border-[#d9e2dd] bg-white p-6 shadow-[0_10px_30px_rgba(42,66,56,0.08)]"
+                >
+                  <h3 className="m-0 mb-2 text-[19px]">{contact.title}</h3>
+                  <p className="m-0 text-[#65736c]">{contact.description}</p>
+                </article>
+              )
             ))}
           </div>
         </section>
