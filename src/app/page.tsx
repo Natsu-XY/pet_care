@@ -3,7 +3,7 @@ import BookingForm from "./BookingForm";
 
 const services = [
   {
-    title: "精致洗护",
+    title: "精致洗护2",
     description:
       "适合日常清洁和换季掉毛管理，使用低刺激香波，吹干后做毛发蓬松整理。",
     price: "¥128 起",
